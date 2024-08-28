@@ -1,0 +1,208 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.resolucion {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para móvil */
+@media (max-width: 560px) {
+    .desktop { display: none; }
+    .tablet { display: none; }
+    .movil { display: block; }
+
+    .flags_item {
+        width: 30px;
+        height: 20px;
+    }
+
+    .flags {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        gap: 20px;
+        border: 15px solid transparent;
+    }
+}
+
+/* Estilos para tablet */
+@media (min-width: 561px) and (max-width: 720px) {
+    .desktop { display: none; }
+    .movil { display: none; }
+    .tablet { display: block; }
+
+    
+
+    .flags_item {
+        width: 40px;
+        height: 30px;
+    }
+
+    .flags {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        gap: 20px;
+        border: 15px solid transparent;
+    }
+}
+
+/* Estilos para ordenador */
+@media (min-width: 721px) {
+    .tablet { display: none; }
+    .movil { display: none; }
+    .desktop { display: flex; }
+
+    .desktop .left, 
+    .desktop .right {
+        flex: 1; 
+        background-color: #ffffff; 
+        height: 100vh;
+    }
+
+    .desktop .center {
+        flex: 0 0 40%; 
+        min-width: 300px;
+        height: 100vh;
+    }
+
+    .flags_item {
+        width: 50px;
+        height: 30px;
+    }
+
+    .flags {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: absolute;
+        top: 27px;
+        right: 0;
+        gap: 27px;
+        border: 27px solid transparent;
+    }
+}
+
+
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.flags_item img {
+    width: 100%;
+    height: auto; 
+}
+
+
+/* paginas para movil*/
+.pagina1_mov {
+    background-image: url('../img/img_movil/Es/1.jpg');
+}
+
+.pagina2_mov {
+    background-image: url('../img/img_movil/Es/2.jpg');
+}
+
+.pagina3_mov {
+    background-image: url('../img/img_movil/Es/3.jpg');
+}
+
+.pagina4_mov {
+    background-image: url('../img/img_movil/Es/4.jpg');
+}
+
+.pagina5_mov {
+    background-image: url('../img/img_movil/Es/5.jpg');
+}
+
+.pagina6_mov {
+    background-image: url('../img/img_movil/Es/6.jpg');
+}
+
+.pagina7_mov {
+    background-image: url('../img/img_movil/Es/7.jpg');
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/* paginas para tablet*/
+.pagina1_tablet {
+    background-image: url('../img/img_tablet/Es/1.jpg');
+}
+
+.pagina2_tablet {
+    background-image: url('../img/img_tablet/Es/2.jpg');
+}
+
+.pagina3_tablet {
+    background-image: url('../img/img_tablet/Es/3.jpg');
+}
+
+.pagina4_tablet {
+    background-image: url('../img/img_tablet/Es/4.jpg');
+}
+
+.pagina5_tablet {
+    background-image: url('../img/img_tablet/Es/5.jpg');
+}
+
+.pagina6_tablet {
+    background-image: url('../img/img_tablet/Es/6.jpg');
+}
+
+.pagina7_tablet {
+    background-image: url('../img/img_tablet/Es/7.jpg');
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/* paginas para ordenador*/
+.pagina1_desk {
+    background-image: url('../img/img_desk/Es/8.jpg');
+    background-color: white;
+
+}
+
+.pagina2_desk {
+    background-image: url('../img/img_desk/Es/9.jpg');
+}
+
+.pagina3_desk {
+    background-image: url('../img/img_desk/Es/10.jpg');
+}
+
+.pagina4_desk {
+    background-image: url('../img/img_desk/Es/11.jpg');
+}
+
+.pagina5_desk {
+    background-image: url('../img/img_desk/Es/12.jpg');
+}
+
+.pagina6_desk {
+    background-image: url('../img/img_desk/Es/13.jpg');
+}
+
+.pagina7_desk {
+    background-image: url('../img/img_desk/Es/14.jpg');
+}
+
