@@ -35,7 +35,7 @@ body, html {
 }
 
 /* Estilos para tablet */
-@media (min-width: 561px) and (max-width: 920px) {
+@media (min-width: 561px) and (max-width: 680px) {
     .desktop { display: none; }
     .movil { display: none; }
     .tablet { display: block; }
@@ -61,7 +61,7 @@ body, html {
 }
 
 /* Estilos para ordenador */
-@media (min-width: 921px) {
+@media (min-width: 681px) {
     .tablet { display: none; }
     .movil { display: none; }
     .desktop { display: flex; }
