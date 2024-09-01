@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const flags = document.querySelectorAll('.flags_item');
     const sections = document.querySelectorAll('.section');
-    const formulario = document.querySelector('.formulario');
+
+    const formularioLinks = {
+        movil: document.querySelector('.movil .pagina6_mov h1 a'),
+        tablet: document.querySelector('.tablet .pagina6_tablet h1 a'),
+        desk: document.querySelector('.desktop .pagina6_desk h1 a')
+    };
 
     const getDeviceType = () => {
         const width = window.innerWidth;
@@ -14,23 +19,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const updateBackgroundImages = () => {
+    const updateBackgroundImagesAndLink = () => {
         const deviceType = getDeviceType();
+        const formularioLink = formularioLinks[deviceType];
+
         flags.forEach(flag => {
             flag.addEventListener('click', () => {
                 const language = flag.getAttribute('data-language');
+                
                 sections.forEach((section, index) => {
                     const imagePath = `../img/img_${deviceType}/${language}/${index + 1}.jpg`;
                     section.style.backgroundImage = `url(${imagePath})`;
                 });
+
+                if (language === 'It') {
+                    formularioLink.textContent = 'Vai al modulo';
+                } else if (language === 'Br') {
+                    formularioLink.textContent = 'Vai pra formulario';
+                } else {
+                    formularioLink.textContent = 'Ir al formulario'; 
+                }
             });
         });
     };
 
-    updateBackgroundImages();
+    updateBackgroundImagesAndLink();
 
-    // Actualiza el tipo de dispositivo si la ventana se redimensiona
     window.addEventListener('resize', () => {
-        updateBackgroundImages();
+        updateBackgroundImagesAndLink();
     });
 });
