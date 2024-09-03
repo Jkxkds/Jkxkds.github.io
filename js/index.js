@@ -34,10 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (language === 'It') {
                     formularioLink.textContent = 'Vai al modulo';
+                    formularioLink.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdIwnenuPfS242dE8VldHidVZJ5iaQH0AY79xC1m8OKYWMQAw/viewform';
                 } else if (language === 'Br') {
                     formularioLink.textContent = 'Vai pra formulario';
+                    formularioLink.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdJx66rB3vtJMKXYHPyPRCBMeZA-tvxSbqVIu3LMLBu0FAd6Q/viewform?usp=sf_link';
                 } else {
-                    formularioLink.textContent = 'Ir al formulario'; 
+                    formularioLink.textContent = 'Ir al formulario';
+                    formularioLink.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdJx66rB3vtJMKXYHPyPRCBMeZA-tvxSbqVIu3LMLBu0FAd6Q/viewform?usp=sf_link';
                 }
             });
         });
